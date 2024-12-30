@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Vyas | Screenwriter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    
+    <nav>
+        <div class="container">
+            <!-- M logo links back to homepage -->
+            <a href="./index.html" class="logo">
+                <video autoplay muted loop playsinline class="logo-video">
+                    <source src="../Maya_Images/MayaLogo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="../About_Page/about.html">About</a></li>
+                <li><a href="../Projects_Page/projects.html">Projects</a></li>
+                <li><a href="../Evil_Lair/evilLair.html">Maya's Lair</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/maya_vya4" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.kickstarter.com/projects/legallybrown/legally-brown-the-musical-the-short" target="_blank"><i class="fab fa-kickstarter"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Relative paths for images -->
+                        <img src="../Maya_Images/cars.jpg" alt="Cars">
+                        <img src="../Maya_Images/legallybrown.jpg" alt="Legally Brown">
+                        <img src="../Maya_Images/leverageredemption.jpg" alt="Leverage Redemption">
+                        <img src="../Maya_Images/scooter.jpg" alt="Scooter">
+                        <img src="../Maya_Images/walker.jpg" alt="Walker">
+                        <img src="../Maya_Images/wewereliars.jpg" alt="We Were Liars">
+                        <!-- Duplicate set for continuous scrolling -->
+                        <img src="../Maya_Images/cars.jpg" alt="Cars">
+                        <img src="../Maya_Images/legallybrown.jpg" alt="Legally Brown">
+                        <img src="../Maya_Images/leverageredemption.jpg" alt="Leverage Redemption">
+                        <img src="../Maya_Images/scooter.jpg" alt="Scooter">
+                        <img src="../Maya_Images/walker.jpg" alt="Walker">
+                        <img src="../Maya_Images/wewereliars.jpg" alt="We Were Liars">
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h1>Maya Vyas</h1>
+                    <h2>Screenwriter, Storyteller, Actress</h2>
+                    <a href="../Projects_Page/projects.html" class="cta-button">
+                        <span>Explore My Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Wait for the page to load completely
+        window.addEventListener('load', function() {
+            // Hide the loading overlay
+            document.querySelector('.loading-overlay').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
