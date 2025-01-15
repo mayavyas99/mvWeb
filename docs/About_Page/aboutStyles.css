@@ -226,6 +226,13 @@ a:focus, button:focus {
     padding-left: 20px;
 }
 
+.philosophy p {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #333; /* Optional: Ensure it matches the rest of the section */
+    line-height: 1.6; /* Optional: Adjust for better readability */
+    margin-top: 20px; /* Optional: Add spacing if needed */
+}
+
 /* Awards Section */
 .awards {
     padding: 60px 0;
