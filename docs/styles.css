@@ -130,20 +130,21 @@ header {
 
 
 .carousel-container {
-    width: 100%; /* Full width of the page */
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Reduce the margins */
+    margin: 0 auto;
     position: relative;
+    overflow: hidden; /* Ensures only the visible area is shown */
 }
 
 .carousel {
-    width: 100%; /* Carousel takes up the full width */
+    width: 100%;
     overflow: hidden;
 }
 
 .carousel-track {
     display: flex;
-    animation: carousel-scroll 20s linear infinite;
+    animation: carousel-scroll 20s linear infinite; /* Continuous scrolling animation */
 }
 
 .carousel-track img {
@@ -151,6 +152,17 @@ header {
     height: auto;
     object-fit: cover;
 }
+
+/* Keyframes for seamless scrolling */
+@keyframes carousel-scroll {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-50%); /* Scroll halfway, accounting for the duplicated images */
+    }
+}
+
 
 .hero-content {
     position: absolute;
