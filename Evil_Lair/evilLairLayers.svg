@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="474.1333mm"
+   height="270.93332mm"
+   viewBox="0 0 474.1333 270.93332"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.43502549"
+     inkscape:cx="403.42464"
+     inkscape:cy="579.2764"
+     inkscape:window-width="1512"
+     inkscape:window-height="945"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer9"
+     showguides="false"
+     showborder="false"
+     borderlayer="false">
+    
+    <inkscape:page
+       x="0"
+       y="0"
+       width="474.1333"
+       height="270.93332"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+
+  <defs id="defs1" />
+  
+  <!-- Layer 1 -->
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="Layer_1"
+     sodipodi:insensitive="true"
+     transform="translate(128.5875,-12.964591)">
+    <image
+       width="474.13333"
+       height="270.93332"
+       preserveAspectRatio="none"
+       id="Image_Layer1"
+       x="-128.58749"
+       y="12.96459" />
+  </g>
+  
+  <!-- Paper Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="Paper_Layer"
+     inkscape:label="Paper"
+     transform="translate(128.5875,-12.964591)">
+    
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 51.3888,252.63194 15.942794,-10.40436 14.36038,3.91647 -9.89007,8.2681 -5.89448,4.31207 z"
+       id="Paper1" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 114.11435,237.28081 -13.43371,-6.01869 1.39633,-0.33704 7.51133,-4.9594 4.6705,-4.18901 2.88897,-3.27417 12.08553,2.26303 -1.39634,3.08157 -3.22601,3.75566 -4.33346,4.3816 z"
+       id="Paper2" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 95.606641,186.17006 1.663192,-1.50224 5.955297,-1.60954 0.91207,0.37556 1.39494,-0.59016 3.75559,6.22355 -1.01938,0.37556 -0.75112,1.07303 -6.22355,3.64829 -3.862893,-5.90165 z"
+       id="Paper3" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 170.21243,247.05862 5.47576,-2.50586 6.31104,-3.34114 6.40385,-4.91889 0.83528,-1.20653 7.70318,3.52676 7.8888,2.04181 -7.14632,4.26923 -6.40385,4.54766 -7.79599,4.45485 c 0,0 -13.8286,-7.14632 -13.27175,-6.86789 z"
+       id="Paper4" />
+  </g>
+
+  <!-- Arcade Machine Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="ArcadeMachine_Layer"
+     inkscape:label="ArcadeMachine"
+     transform="translate(128.5875,-12.964591)">
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 303.93605,177.57925 21.4843,4.49106 -12.01666,22.81948 -22.81947,-7.28281 z"
+       id="RightArcadeScreen" />
+    
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 287.30696,148.69076 28.40297,3.76278 -1.2138,10.31732 -27.91746,-4.73383 z"
+       id="RightArcadePanel" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m -87.09793,177.11683 13.80821,20.97785 -24.031593,6.10748 -11.551097,-21.90726 z"
+       id="LeftArcadeScreen" />
+    
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m -98.250712,152.15583 26.819788,-3.58482 0.796628,9.95784 -26.554247,4.51422 z"
+       id="LeftArcadePanel" />
+  </g>
+  
+  <!-- Spirals Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="Spirals_Layer"
+     inkscape:label="Spirals"
+     transform="translate(128.5875,-12.964591)">
+
+    <ellipse
+       style="fill:#0000FF;opacity:0.4;stroke-width:0.264583"
+       id="BlueSpiral1"
+       cx="19.7124"
+       cy="74.27861"
+       rx="13.617745"
+       ry="13.712974" />
+
+    <ellipse
+       style="fill:#008000;opacity:0.4;stroke-width:0.234046"
+       id="GreenSpiral1"
+       cx="176.83203"
+       cy="51.595322"
+       rx="11.713165"
+       ry="12.474997" />
+
+    <ellipse
+       style="fill:#0000FF;opacity:0.4;stroke-width:0.26932"
+       id="BlueSpiral2"
+       cx="303.70819"
+       cy="109.10093"
+       rx="12.094082"
+       ry="15.998469" />
+
+    <ellipse
+       style="fill:#800080;opacity:0.4;stroke-width:0.318021"
+       id="PurpleSpiral2"
+       cx="67.465904"
+       cy="58.844585"
+       rx="16.665073"
+       ry="16.188927" />
+
+    <path
+       id="PurpleSpiral1"
+       style="fill:#800080;opacity:0.4;stroke-width:0.264583"
+       d="m -87.736328,83.083984 c -2.631908,0.0435 -5.258583,0.593925 -7.647563,1.710872 -2.732226,1.236445 -5.143739,3.125419 -7.116419,5.376623 -2.50897,2.890738 -4.30643,6.372076 -5.32527,10.056771 -1.11056,3.95229 -1.34307,8.14414 -0.72081,12.20131 0.60746,3.90662 2.01188,7.70561 4.22215,10.99314 1.81112,2.69909 4.17779,5.04755 6.968614,6.72506 2.76677,1.66838 5.955055,2.65316 9.191146,2.72354 2.827453,0.0812 5.664671,-0.53356 8.22837,-1.72658 2.918483,-1.34858 5.47657,-3.42613 7.505845,-5.91124 2.328816,-2.85092 3.97378,-6.22512 4.93123,-9.77272 1.947976,-7.29395 0.994943,-15.39321 -2.921421,-21.886887 -3.098538,-5.209702 -8.344628,-9.3163 -14.418565,-10.261537 -0.957675,-0.153353 -1.927555,-0.228571 -2.897307,-0.228352 z" />
+  </g>
+
+  <!-- Candles Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="Candles_Layer"
+     inkscape:label="Candles"
+     transform="translate(128.5875,-12.964591)">
+
+    <path
+       style="fill:#FFD700;opacity:0.4;stroke-width:0.264583"
+       d="m 227.8693,64.314511 1.49073,-1.703694 0.85185,-3.620355 2.12962,2.768507 v 2.768505 0.851847 z"
+       id="Candle4" />
+
+    <path
+       style="fill:#FFD700;opacity:0.4;stroke-width:0.264583"
+       d="m 236.48998,63.32185 0.33153,-2.320695 1.54713,-2.099678 1.98917,0.110509 0.77357,2.762734 -0.44204,1.989167 -3.86783,0.773567 z"
+       id="Candle3" />
+
+    <path
+       style="fill:#FFD700;opacity:0.4;stroke-width:0.264583"
+       d="m 246.32532,58.790969 -1.54714,7.072595 h 3.42579 l -0.55254,-2.873242 -0.66306,-2.210187 z"
+       id="Candle2" />
+
+    <path
+       style="fill:#FFD700;opacity:0.4;stroke-width:0.264583"
+       d="m 144.43205,190.1541 0.88609,-2.83547 2.39243,-1.50635 1.94939,0.44304 1.15191,3.36713 -0.26582,1.50635 -2.56965,-0.44305 -2.74687,0.53165 z"
+       id="Candle1" />
+  </g>
+
+  <!-- Drink Machine Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="DrinkMachine_Layer"
+     inkscape:label="DrinkMachine"
+     transform="translate(128.5875,-12.964591)">
+
+    <path
+       style="fill:#0000FF;opacity:0.4;stroke-width:0.264583"
+       d="m 203.21946,122.16437 -0.77564,72.13516 4.65388,5.81734 22.29984,6.20518 4.84779,-2.71476 0.38783,-74.84992 -4.26606,-6.01126 z"
+       id="DoorWindow" />
+    
+    <path
+       style="fill:#008000;opacity:0.4;stroke-width:0.264583"
+       d="m 202.05599,105.87579 32.57717,0.96956 2.52085,3.68432 -2.13303,4.65388 -31.99543,-1.93912 -1.35738,-3.49041 z"
+       id="DrinkMachinePanel" />
+  </g>
+
+  <!-- Bookshelf Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="Bookshelf_Layer"
+     inkscape:label="Bookshelf"
+     transform="translate(128.5875,-12.964591)">
+
+    <rect
+       style="fill:#800080;opacity:0.4;stroke-width:0.264583"
+       id="Shelf1"
+       width="38.027431"
+       height="19.289276"
+       x="48.498753"
+       y="94.793015" />
+  </g>
+
+  <!-- Objects Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="Objects_Layer"
+     inkscape:label="Objects"
+     transform="translate(128.5875,-12.964591)">
+
+    <rect
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       id="TVMonitor"
+       width="19.564838"
+       height="15.706983"
+       x="111.60225"
+       y="147.14963" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 109.19874,84.60443 1.7216,-4.426976 -0.24594,-7.624236 2.95132,-5.164807 9.09989,-2.951316 8.85396,5.164804 0.98377,12.297156 1.22971,3.93509 -3.4432,1.229717 0.24594,8.116123 -7.62423,3.689146 -8.36207,-3.197262 -1.96755,-2.951316 0.73784,-5.164807 z"
+       id="Skull" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m 167.26558,150.73192 19.01372,3.58229 -6.61347,12.67581 -18.46259,-4.9601 z"
+       id="MapPanel" />
+
+    <rect
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       id="LavaLamp"
+       width="8.2668324"
+       height="23.147131"
+       x="77.157104"
+       y="181.3192"
+       ry="4.1334162" />
+
+    <rect
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       id="Drawer1"
+       width="35.661751"
+       height="9.8377237"
+       x="104.27988"
+       y="195.27882"
+       ry="0.19833304" />
+
+    <ellipse
+       style="fill:#800080;opacity:0.4;stroke-width:0.264583"
+       id="CPUPurple"
+       cx="168.47102"
+       cy="185.68704"
+       rx="5.9026346"
+       ry="7.378293" />
+
+    <ellipse
+       style="fill:#8B4513;opacity:0.4;stroke-width:0.264583"
+       id="SnackBarrel"
+       cx="181.75195"
+       cy="201.18147"
+       rx="12.543098"
+       ry="5.410748" />
+
+    <ellipse
+       style="fill:#FFA500;opacity:0.4;stroke-width:0.264583"
+       id="Pumpkin"
+       cx="191.58969"
+       cy="77.349106"
+       rx="9.0998945"
+       ry="8.2390947" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m -12.789042,174.86555 23.118653,-7.37829 8.853952,9.09989 -22.8727098,7.62424 z"
+       id="Keyboard" />
+
+    <path
+       style="fill:#000000;opacity:0.4;stroke-width:0.264583"
+       d="m -29.021288,149.28747 23.6105396,-4.91886 9.3458381,18.69167 -24.3483677,6.88641 z"
+       id="Monitor" />
+  </g>
+
+  <!-- Orbs Layer -->
+  <g
+     inkscape:groupmode="layer"
+     id="Orbs_Layer"
+     inkscape:label="Orbs"
+     transform="translate(128.5875,-12.964591)">
+
+    <ellipse
+       style="fill:#FFFF00;opacity:0.4;stroke-width:0.264583"
+       id="YellowOrb1"
+       cx="36.768497"
+       cy="53.246681"
+       rx="5.53372"
+       ry="5.2877769" />
+
+    <ellipse
+       style="fill:#FFFF00;opacity:0.4;stroke-width:0.264583"
+       id="YellowOrb2"
+       cx="241.14722"
+       cy="95.548897"
+       rx="5.0418339"
+       ry="4.5499473" />
+
+    <ellipse
+       style="fill:#800080;opacity:0.4;stroke-width:0.264583"
+       id="PurpleOrb1"
+       cx="224.66902"
+       cy="34.432037"
+       rx="2.8283458"
+       ry="2.7053742" />
+
+    <circle
+       style="fill:#0000FF;opacity:0.4;stroke-width:0.264583"
+       id="BlueOrb2"
+       cx="153.71445"
+       cy="56.566917"
+       r="3.1972604" />
+
+    <ellipse
+       style="fill:#0000FF;opacity:0.4;stroke-width:0.264583"
+       id="BlueOrb1"
+       cx="-15.617388"
+       cy="125.06207"
+       rx="4.5499473"
+       ry="4.3040042" />
+
+    <circle
+       style="fill:#0000FF;opacity:0.4;stroke-width:0.264583"
+       id="BlueOrb3"
+       cx="259.46997"
+       cy="45.253532"
+       r="3.9350898" />
+
+    <ellipse
+       style="fill:#008000;opacity:0.4;stroke-width:0.264583"
+       id="GreenOrb1"
+       cx="-54.353428"
+       cy="261.80646"
+       rx="3.9350898"
+       ry="4.0580611" />
+
+    <circle
+       style="fill:#FFFF00;opacity:0.4;stroke-width:0.264583"
+       id="YellowOrb3"
+       cx="29.390202"
+       cy="148.42668"
+       r="5.53372" />
+  </g>
+
+</svg>

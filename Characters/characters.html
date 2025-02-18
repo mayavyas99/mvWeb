@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Character Chatbots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        playfair: ["Playfair Display", "serif"],
+                        montserrat: ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-montserrat flex flex-col items-center min-h-screen py-10">
+
+    <!-- 🔙 Back Button to Maya’s Lair -->
+    <a href="../Evil_Lair/evilLair.html"
+       class="absolute top-4 left-4 px-4 py-2 text-lg font-semibold bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900 transition">
+        &#8592; Back to Lair
+    </a>
+
+    <!-- 🎭 Page Title -->
+    <h1 class="text-4xl font-bold mb-6">Character Chatbots</h1>
+
+    <!-- 🧑‍🎤 Characters Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl w-full">
+
+        <!-- 🎭 Sita Anand -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+            <img src="../Maya_Images/SitaAnand.webp" alt="Sita Anand" class="w-48 h-48 rounded-full mb-4">
+            <h2 class="text-xl font-semibold">Sita Anand</h2>
+            <p class="text-sm text-gray-600">
+                Hi! I'm Sita, a 17-year-old with big dreams of becoming an actress. 
+                I bring drama to life, both on and off stage! Let’s talk!
+            </p>
+            <a href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/14/19/20241114193506-106GWWBT.json" 
+               target="_blank"
+               class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+               Chat 💭
+            </a>
+        </div>
+
+        <!-- 🤓 Nikki Logani -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+            <img src="../Maya_Images/NikkiLogani.webp" alt="Nikki Logani" class="w-48 h-48 rounded-full mb-4">
+            <h2 class="text-xl font-semibold">Nikki Logani</h2>
+            <p class="text-sm text-gray-600">
+                I’m Nikki, a 16-year-old with a quirky sense of humor and a love for tech. 
+                Got questions? Let’s chat!
+            </p>
+            <a href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/14/19/20241114195337-M4DJ1HBI.json" 
+               target="_blank"
+               class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+               Chat 💭
+            </a>
+        </div>
+
+        <!-- 🎩 Sean Casey -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center">
+            <img src="../Maya_Images/SeanCasey.webp" alt="Sean Casey" class="w-48 h-48 object-cover rounded-full mb-4">
+            <h2 class="text-xl font-semibold">Sean Casey</h2>
+            <p class="text-sm text-gray-600">
+                Hey, I’m Sean, the matchmaking mastermind of Myers High. 
+                Need dating advice? Let’s talk!
+            </p>
+            <a href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2024/11/14/21/20241114210831-56HGFXJH.json" 
+               target="_blank"
+               class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+               Chat 💭
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

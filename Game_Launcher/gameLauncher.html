@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Launcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        playfair: ["Playfair Display", "serif"],
+                        montserrat: ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-montserrat">
+
+    <!-- ✅ Back Button -->
+    <button id="back-button" 
+            class="absolute top-4 left-4 px-4 py-2 text-lg font-semibold bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-900 transition">
+        &#8592; Back
+    </button>
+
+    <!-- ✅ Centered Content -->
+    <div class="flex flex-col justify-center items-center min-h-screen space-y-6">
+
+        <!-- 🎮 Game Launcher Title -->
+        <h1 class="text-4xl font-bold">Game Launcher</h1>
+
+        <!-- 🕹️ Game Box -->
+        <div class="flex flex-wrap justify-center gap-8">
+            <a href="../Games/doodleJump.html" 
+               class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition">
+                <img src="../Games/Sprites/rightPlayer.png" alt="Doodle Jump Character" class="w-32 h-32">
+                <h2 class="text-xl font-semibold">Doodle Jump</h2>
+            </a>
+        </div>
+
+        <!-- 🏆 Leaderboard Section -->
+        <div id="leaderboard-container" class="w-full max-w-md bg-white shadow-md rounded-lg p-4 overflow-auto max-h-96">
+            <!-- Leaderboard content loads here -->
+        </div>
+
+    </div>
+
+    <script src="./leaderboard.js"></script>
+    <script>
+        // Back Button Functionality
+        document.getElementById('back-button').addEventListener('click', (e) => {
+            e.preventDefault();
+            if (document.referrer) {
+                window.history.back();
+            } else {
+                window.location.href = '../Evil_Lair/evilLair.html';
+            }
+        });
+
+        // Initialize leaderboard
+        window.addEventListener('load', () => {
+            Leaderboard.renderLeaderboard('leaderboard-container');
+        });
+    </script>
+
+</body>
+</html>

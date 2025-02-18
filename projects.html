@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Maya Vyas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900 font-montserrat">
+
+    <!-- ✅ Updated Navbar -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+        <div class="w-full flex justify-between items-center px-4 py-4">
+            <!-- Logo -->
+            <a href="index.html" class="w-20 h-20 flex items-center">
+                <video autoplay loop muted playsinline class="w-full h-full object-contain">
+                    <source src="Maya_Images/MayaLogo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-10 text-lg font-medium">
+                <li><a href="index.html" class="hover:text-gray-600">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-600">About</a></li>
+                <li><a href="projects.html" class="text-red-500 relative after:content-[''] after:block after:w-full after:h-0.5 after:bg-red-500 after:mt-1">Projects</a></li>
+                <li><a href="./Evil_Lair/evilLair.html" class="hover:text-gray-600">Maya's Lair</a></li>
+            </ul>
+
+            <!-- Social Icons -->
+            <ul class="hidden md:flex space-x-6 text-2xl text-gray-700 items-center">
+                <li><a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/maya_vya4" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.kickstarter.com/projects/legallybrown/legally-brown-the-musical-the-short" target="_blank"><i class="fa-brands fa-kickstarter"></i></a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-2xl">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- ✅ Main Content -->
+    <main class="mt-32 flex justify-center">
+        <div class="w-full max-w-[85vw] md:max-w-[75vw] mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold font-playfair text-center">My Projects</h1>
+            
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <!-- Project Item -->
+                <div class="relative group">
+                    <img src="Maya_Images/legallybrown.jpg" alt="Legally Brown" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition">
+                        <h2 class="text-xl font-bold">Legally Brown The Musical</h2>
+                        <p class="text-sm text-center mt-2 px-4">A scrappy brown high schooler must fight her way to be Elle Woods when the lead gets injured before showtime.</p>
+                        <a href="https://www.instagram.com/legallybrownfilm/" target="_blank"
+                        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition">
+                        Instagram
+                     </a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition">
+                        <h2 class="text-xl font-bold">Leverage: Redemption</h2>
+                        <p class="text-sm text-center mt-2 px-4">Maya was a staff writer for season three, producing an episode in New Orleans in 2024.</p>
+                        <a href="https://www.imdb.com/title/tt12197698/" target="_blank"
+                        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition">
+                        IMDB
+                     </a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="Maya_Images/wewereliars.jpg" alt="We Were Liars" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition">
+                        <h2 class="text-xl font-bold">We Were Liars</h2>
+                        <p class="text-sm text-center mt-2 px-4">Maya co-wrote the penultimate episode, produced in Nova Scotia in 2024.</p>
+                        <a href="https://www.imdb.com/title/tt3914054/" target="_blank"
+                        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition">
+                        IMDB
+                     </a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="Maya_Images/walker.jpg" alt="Walker" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition">
+                        <h2 class="text-xl font-bold">Walker</h2>
+                        <p class="text-sm text-center mt-2 px-4">Maya wrote episodes 212 & 309. She produced her second episode in Austin in 2023.</p>
+                        <a href="https://www.imdb.com/title/tt11006642/" target="_blank"
+                        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition">
+                        IMDB
+                     </a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="Maya_Images/cars.jpg" alt="Cars of the Wild" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition">
+                        <h2 class="text-xl font-bold">Cars of the Wild</h2>
+                        <p class="text-sm text-center mt-2 px-4">A miniseries for Pixar’s Cars YouTube Channel, with 6M+ views.</p>
+                        <a href="https://youtu.be/Ma9-QeAcEVY" target="_blank"
+                        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition">
+                        Watch
+                     </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="Maya_Images/scooter.jpg" alt="Cars of the Wild" class="w-full h-auto rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center text-white transition">
+                        <h2 class="text-xl font-bold">Scooter</h2>
+                        <p class="text-sm text-center mt-2 px-4">Maya stars in the lead role of SCOOTER -- an unemployed 23-year-old girl, who makes a living by sleeping in high schoolers' beds as a body double while they sneak out of the house. Tonight, she must find a way to do her “job” AND attend her friend’s engagement dinner – in the same house! The short premiered in Seattle at NFFTY in 2024.</p>
+                        <a href="https://www.instagram.com/scootershortfilm/" target="_blank"
+                        class="absolute bottom-16 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-orange-600 text-white text-lg font-semibold rounded-lg hover:bg-orange-700 transition">
+                        Instagram
+                     </a>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <!-- ✅ Footer (Placed Below Content) -->
+        <footer class="bg-gray-100 py-6 mt-16 text-center">
+            <!-- Contact Info -->
+            <p class="text-gray-700">📧 Contact: <a href="mailto:Khart@anonymouscontent.com" class="text-blue-500 hover:underline">khart@anonymouscontent.com</a></p>
+            
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fa-brands fa-linkedin text-gray-700 text-2xl hover:text-black"></i></a>
+                <a href="https://twitter.com/maya_vya4" target="_blank"><i class="fa-brands fa-twitter text-gray-700 text-2xl hover:text-black"></i></a>
+                <a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fa-brands fa-instagram text-gray-700 text-2xl hover:text-black"></i></a>
+            </div>
+    
+            <!-- Navigation Links -->
+            <ul class="flex justify-center space-x-6 text-gray-600 mt-4">
+                <li><a href="index.html" class="hover:text-black">Home</a></li>
+                <li><a href="about.html" class="hover:text-black">About</a></li>
+                <li><a href="projects.html" class="hover:text-black">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+            </ul>
+    
+            <!-- Copyright -->
+            <div class="mt-6 text-gray-500 text-sm">
+                <p>&copy; 2024 Maya Vyas. All Rights Reserved.</p>
+                <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+                <a href="terms.html" class="hover:underline">Terms of Service</a>
+            </div>
+        </footer>
+    
+    </body>
+    </html>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
