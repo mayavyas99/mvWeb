@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Evil Lair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative w-full h-screen flex items-center justify-center bg-black">
+
+    <!-- ✅ Video Background -->
+    <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+        <source src="../Maya_Images/evilLairVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- ✅ Logo in Top Left Corner -->
+    <a href="../index.html" class="absolute top-8 left-8 w-30 h-20 z-50 block">
+        <img src="../Maya_Images/HomeIcon.png" alt="Maya Logo" class="w-full h-full object-contain">
+    </a>
+    
+
+    <!-- ✅ Buttons Positioned Using Tailwind -->
+    <div class="relative z-10 w-full h-full">
+        <!-- ✅ Button 1 (Transparent, Clickable) -->
+<a href="../Game_Launcher/gameLauncher.html" target="_blank" 
+class="absolute top-[73%] left-[92%] transform -translate-x-1/2 -translate-y-1/2 
+       px-20 py-40 bg-transparent rounded-lg shadow-lg transition opacity-0 hover:opacity-10">
+</a>
+
+<!-- ✅ Button 2 (Transparent, Clickable) -->
+<a href="../Characters/characters.html" target="_blank" 
+class="absolute top-[51%] bottom-[0%] left-[41.5%] transform -translate-x-1/2 -translate-y-1/2 px-16 py-50 rounded-lg shadow-lg transition opacity-0 hover:opacity-10"></a>
+    </div>
+
+</body>
+</html>

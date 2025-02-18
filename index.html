@@ -1,82 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya Vyas | Screenwriter</title>
-    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        playfair: ["Playfair Display", "serif"],
+                        montserrat: ["Montserrat", "sans-serif"]
+                    },
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 360s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .carousel-track {
+            display: flex;
+            width: 200%;
+        }
+        .carousel-track ul {
+            display: flex;
+            width: 50%;
+        }
+        .carousel-track ul li {
+            flex: 1 0 auto;
+            margin: 0 16px;
+        }
+        .carousel-track ul img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-<body>
-    <!-- Loading overlay -->
-    <div class="loading-overlay">
-        <div class="loader"></div>
-    </div>
-    
-    <nav>
-        <div class="container">
-            <!-- M logo links back to homepage -->
-            <a href="./index.html" class="logo">
-                <video autoplay muted loop playsinline class="logo-video">
-                    <source src="../docs/Maya_Images/MayaLogo.mp4" type="video/mp4">
+<body class="bg-white text-gray-900 font-montserrat">
+
+    <!-- Navigation Bar -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+        <div class="w-full flex justify-between items-center px-4 py-4">
+            <!-- Logo -->
+            <a href="index.html" class="w-20 h-20 flex items-center">
+                <video autoplay loop muted playsinline class="w-full h-full object-contain">
+                    <source src="./Maya_Images/MayaLogo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </a>
-            <ul class="nav-links">
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="/docs/About_Page/about.html">About</a></li>
-                <li><a href="/docs/Projects_Page/projects.html">Projects</a></li>
-                <li><a href="/docs/Evil_Lair/evilLair.html">Maya's Lair</a></li>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-10 text-lg font-medium">
+                <li>
+                    <a href="index.html" class="text-red-500 relative after:content-[''] after:block after:w-full after:h-0.5 after:bg-red-500 after:mt-1">Home</a>
+                </li>
+                <li><a href="about.html" class="hover:text-gray-600">About</a></li>
+                <li><a href="projects.html" class="hover:text-gray-600">Projects</a></li>
+                <li><a href="./Evil_Lair/evilLair.html" class="hover:text-gray-600">Maya's Lair</a></li>
             </ul>
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/maya_vya4" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.kickstarter.com/projects/legallybrown/legally-brown-the-musical-the-short" target="_blank"><i class="fab fa-kickstarter"></i></a></li>
+
+            <!-- Social Icons -->
+            <ul class="hidden md:flex space-x-6 text-2xl text-gray-700 items-center">
+                <li><a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/maya_vya4" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.kickstarter.com/projects/legallybrown/legally-brown-the-musical-the-short" target="_blank"><i class="fa-brands fa-kickstarter"></i></a></li>
             </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-2xl">&#9776;</button>
         </div>
     </nav>
+    
+    
 
-    <main>
-        <section class="hero">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <!-- Relative paths for images -->
-                        <img src="../docs/Maya_Images/cars.jpg" alt="Cars">
-                        <img src="../docs/Maya_Images/legallybrown.jpg" alt="Legally Brown">
-                        <img src="../docs/Maya_Images/leverageredemption.jpg" alt="Leverage Redemption">
-                        <img src="../docs/Maya_Images/scooter.jpg" alt="Scooter">
-                        <img src="../docs/Maya_Images/walker.jpg" alt="Walker">
-                        <img src="../docs/Maya_Images/wewereliars.jpg" alt="We Were Liars">
-                        <!-- Duplicate set for continuous scrolling -->
-                        <img src="../docs/Maya_Images/cars.jpg" alt="Cars">
-                        <img src="../docs/Maya_Images/legallybrown.jpg" alt="Legally Brown">
-                        <img src="../docs/Maya_Images/leverageredemption.jpg" alt="Leverage Redemption">
-                        <img src="../docs/Maya_Images/scooter.jpg" alt="Scooter">
-                        <img src="../docs/Maya_Images/walker.jpg" alt="Walker">
-                        <img src="../docs/Maya_Images/wewereliars.jpg" alt="We Were Liars">
-                    </div>
-                </div>
-                <div class="hero-content">
-                    <h1>Maya Vyas</h1>
-                    <h2>Screenwriter, Storyteller, Actress</h2>
-                    <a href="/Projects_Page/projects.html" class="cta-button">
-                        <span>Explore My Projects</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 bg-white py-4">
+        <a href="index.html" class="block">Home</a>
+        <a href="About Page/about.html" class="block">About</a>
+        <a href="Projects Page/projects.html" class="block">Projects</a>
+        <a href="Evil_Lair/evilLair.html" class="block">Maya's Lair</a>
+    </div>
+
+    <!-- Hero Section with Infinite Scrolling Carousel -->
+    <main class="mt-32 flex justify-center">
+        <section class="relative w-full max-w-[105vw] md:max-w-[100vw] lg:max-w-[95vw] flex flex-col items-center">
+            <!-- Carousel Container -->
+            <div class="carousel-container overflow-hidden whitespace-nowrap relative w-full">
+                <div class="carousel-track flex w-max animate-infinite-scroll">
+                    <!-- First Set of Images -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <!-- Duplicate Set for Seamless Scroll -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6" aria-hidden="true">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <ul class="flex items-center justify-center md:justify-start space-x-6">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <!-- Duplicate Set for Seamless Scroll -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6" aria-hidden="true">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <ul class="flex items-center justify-center md:justify-start space-x-6">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <!-- Duplicate Set for Seamless Scroll -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6" aria-hidden="true">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <ul class="flex items-center justify-center md:justify-start space-x-6">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <!-- Duplicate Set for Seamless Scroll -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6" aria-hidden="true">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <ul class="flex items-center justify-center md:justify-start space-x-6">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <!-- Duplicate Set for Seamless Scroll -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6" aria-hidden="true">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <ul class="flex items-center justify-center md:justify-start space-x-6">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
+                    <!-- Duplicate Set for Seamless Scroll -->
+                    <ul class="flex items-center justify-center md:justify-start space-x-6" aria-hidden="true">
+                        <li><img src="Maya_Images/legallybrown.jpg" alt="Legally Brown"></li>
+                        <li><img src="Maya_Images/leverageredemption.jpg" alt="Leverage Redemption"></li>
+                        <li><img src="Maya_Images/scooter.jpg" alt="Scooter"></li>
+                        <li><img src="Maya_Images/walker.jpg" alt="Walker"></li>
+                        <li><img src="Maya_Images/cars.jpg" alt="Cars"></li>
+                        <li><img src="Maya_Images/wewereliars.jpg" alt="We Were Liars"></li>
+                    </ul>
                 </div>
             </div>
         </section>
-    </main>
+    
+    
 
-    <script>
-        // Wait for the page to load completely
-        window.addEventListener('load', function() {
-            // Hide the loading overlay
-            document.querySelector('.loading-overlay').classList.add('hidden');
-        });
-    </script>
+            <!-- Overlay Text -->
+            <div class="absolute inset-0 flex items-center justify-center text-white text-center">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+                    <h1 class="text-3xl md:text-5xl font-bold font-playfair mb-4">Maya Vyas</h1>
+                    <h2 class="text-lg md:text-xl">Screenwriter, Storyteller, Actress</h2>
+                    <a href="projects.html" class="mt-4 inline-block bg-white text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition">
+                        Explore My Projects →
+                    </a>
+                </div>
+            </div>
+
+    </main>
+    <footer class="bg-gray-100 py-6 mt-16 text-center">
+        <!-- Contact Info -->
+        <p class="text-gray-700">📧 Contact: <a href="mailto:Khart@anonymouscontent.com" class="text-blue-500 hover:underline">khart@anonymouscontent.com</a></p>
+        
+        <!-- Social Media Links -->
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fa-brands fa-linkedin text-gray-700 text-2xl hover:text-black"></i></a>
+            <a href="https://twitter.com/maya_vya4" target="_blank"><i class="fa-brands fa-twitter text-gray-700 text-2xl hover:text-black"></i></a>
+            <a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fa-brands fa-instagram text-gray-700 text-2xl hover:text-black"></i></a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="flex justify-center space-x-6 text-gray-600 mt-4">
+            <li><a href="index.html" class="hover:text-black">Home</a></li>
+            <li><a href="about.html" class="hover:text-black">About</a></li>
+            <li><a href="projects.html" class="hover:text-black">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+        </ul>
+
+        <!-- Copyright -->
+        <div class="mt-6 text-gray-500 text-sm">
+            <p>&copy; 2024 Maya Vyas. All Rights Reserved.</p>
+            <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+            <a href="terms.html" class="hover:underline">Terms of Service</a>
+        </div>
+    </footer>
 </body>
-</html>

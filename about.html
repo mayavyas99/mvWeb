@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Maya Vyas, an Indian American writer who redefines beauty and challenges stereotypes.">
+    <title>About | Maya Vyas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900 font-montserrat">
+    
+    <!-- ✅ Updated Navbar -->
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+        <div class="w-full flex justify-between items-center px-4 py-4">
+            <!-- Logo -->
+            <a href="index.html" class="w-20 h-20 flex items-center">
+                <video autoplay loop muted playsinline class="w-full h-full object-contain">
+                    <source src="./Maya_Images/MayaLogo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-10 text-lg font-medium">
+                <li>
+                    <a href="index.html" class="hover:text-gray-600">Home</a>
+                </li>
+                <li><a href="about.html" class="text-red-500 relative after:content-[''] after:block after:w-full after:h-0.5 after:bg-red-500 after:mt-1">About</a></li>
+                <li><a href="projects.html" class="hover:text-gray-600">Projects</a></li>
+                <li><a href="./Evil_Lair/evilLair.html" class="hover:text-gray-600">Maya's Lair</a></li>
+            </ul>
+
+            <!-- Social Icons -->
+            <ul class="hidden md:flex space-x-6 text-2xl text-gray-700 items-center">
+                <li><a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/maya_vya4" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.kickstarter.com/projects/legallybrown/legally-brown-the-musical-the-short" target="_blank"><i class="fa-brands fa-kickstarter"></i></a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-2xl">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- ✅ Updated Hero Section -->
+    <main class="mt-32 flex justify-center">
+        <section class="relative w-full max-w-[85vw] md:max-w-[75vw] flex flex-col items-center text-center">
+            <div class="hero-content flex flex-col md:flex-row items-center gap-8">
+                <!-- Profile Image -->
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                    <img src="./Maya_Images/youngmayo.png" alt="Maya Vyas" class="w-full h-full rounded-lg shadow-lg object-cover">
+                </div>
+                <!-- Hero Text -->
+                <div class="max-w-xl">
+                    <h1 class="text-3xl md:text-5xl font-bold font-playfair">About Maya</h1>
+                    <p class="text-lg md:text-xl mt-4">Indian American screenwriter crafting stories that redefine beauty and challenge stereotypes.</p>
+                    <a href="projects.html" class="mt-6 inline-block bg-orange-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-800 transition">
+                        View My Work →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ✅ Bio Section -->
+    <section class="py-16 px-8 max-w-4xl mx-auto">
+        <h2 class="text-2xl text-gray-900 font-semibold mb-4"><i class="fas fa-pen"></i> My Journey</h2>
+        <p class="text-lg">Maya Vyas is an Indian American writer who hails from Tipp City, OH — the loveliest land of cornfields you could ever drive through.</p>
+        <p class="text-lg mt-4">After receiving her BFA in Writing for Screen and Television from USC, Maya joined the CW's <strong>WALKER</strong> for two seasons. Following that, Maya co-wrote an episode of <strong>WE WERE LIARS</strong> (2025) and was staffed on <strong>LEVERAGE: REDEMPTION</strong> season three, both for Amazon Prime.</p>
+    </section>
+
+    <!-- ✅ Writing Philosophy -->
+    <section class="bg-gray-100 py-16 px-8 max-w-4xl mx-auto">
+        <h2 class="text-2xl text-gray-900 font-semibold mb-4"><i class="fas fa-quote-left"></i> What Do I Write?</h2>
+        <blockquote class="italic text-lg border-l-4 border-orange-600 pl-4">
+            "Stereotypes are my favorite things to dissect and prove and break – whether it's a brown girl who wants to be a leading lady, a short king who wants to be swept off his feet, or a group of pyramid-scheming housewives that are as vicious as any cartel."
+        </blockquote>
+        <p class="text-lg mt-4">I hope my work can bring marginalized communities closer and reshape the way we think of beauty – both inside and out.</p>
+    </section>
+
+    <!-- ✅ Awards Section -->
+    <section class="py-16 px-8 max-w-4xl mx-auto">
+        <h2 class="text-2xl text-gray-900 font-semibold mb-4"><i class="fas fa-trophy"></i> Awards</h2>
+        <ul class="text-lg space-y-2">
+            <li><i class="fas fa-award text-yellow-500"></i> Stage 32 Short Film Grand Prize Winner – 2024</li>
+            <li><i class="fas fa-award text-yellow-500"></i> Jon M. Chu Scholar at USC – 2021</li>
+            <li><i class="fas fa-award text-yellow-500"></i> Humanitas College Comedy Award</li>
+            <li><i class="fas fa-award text-yellow-500"></i> Scriptapalooza</li>
+            <li><i class="fas fa-award text-yellow-500"></i> Disney Writing Fellowship</li>
+            <li><i class="fas fa-award text-yellow-500"></i> Cape Writing Fellowship Semifinalist</li>
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+<footer class="bg-gray-100 py-6 mt-16 text-center">
+    <!-- Contact Info -->
+    <p class="text-gray-700">📧 Contact: <a href="mailto:Khart@anonymouscontent.com" class="text-blue-500 hover:underline">khart@anonymouscontent.com</a></p>
+    
+    <!-- Social Media Links -->
+    <div class="flex justify-center space-x-6 mt-4">
+        <a href="https://www.linkedin.com/in/maya-vyas/" target="_blank"><i class="fa-brands fa-linkedin text-gray-700 text-2xl hover:text-black"></i></a>
+        <a href="https://twitter.com/maya_vya4" target="_blank"><i class="fa-brands fa-twitter text-gray-700 text-2xl hover:text-black"></i></a>
+        <a href="https://www.instagram.com/mvyas90/" target="_blank"><i class="fa-brands fa-instagram text-gray-700 text-2xl hover:text-black"></i></a>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="flex justify-center space-x-6 text-gray-600 mt-4">
+        <li><a href="index.html" class="hover:text-black">Home</a></li>
+        <li><a href="about.html" class="hover:text-black">About</a></li>
+        <li><a href="projects.html" class="hover:text-black">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-black">Contact</a></li>
+    </ul>
+
+    <!-- Copyright -->
+    <div class="mt-6 text-gray-500 text-sm">
+        <p>&copy; 2024 Maya Vyas. All Rights Reserved.</p>
+        <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+        <a href="terms.html" class="hover:underline">Terms of Service</a>
+    </div>
+</footer>
+</html>
