@@ -1,12 +1,11 @@
-// Existing game setup
-var c = document.createElement("canvas");
+// Use the existing canvas from the page (inside #game-container)
+var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 
 var screenWidth = 500;
 var screenHeight = 800;
 c.width = screenWidth;
 c.height = screenHeight;
-document.body.appendChild(c);
 
 let isHighScoreSubmitted = false;
 let gameOverChecked = false;
@@ -238,14 +237,12 @@ function loop() {
     }
 }
 
-// Center canvas
+// Center canvas within #game-container
 function centerCanvas() {
+    var container = document.getElementById('game-container');
+    if (!container) return;
     c.style.display = "block";
     c.style.margin = "0 auto";
-    c.style.position = "absolute";
-    c.style.top = "50%";
-    c.style.left = "50%";
-    c.style.transform = "translate(-50%, -50%)";
     c.style.maxWidth = "100%";
     c.style.maxHeight = "100%";
 }
@@ -259,7 +256,7 @@ skipScoreBtn.addEventListener('click', skipHighScore);
 
 // Back button functionality
 backButton.addEventListener('click', () => {
-    window.location.href = './gameLauncher.html';
+    window.location.href = '../Game_Launcher/gameLauncher.html';
 });
 
 // Initialize game

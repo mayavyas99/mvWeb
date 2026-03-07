@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doodle Jump</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./doodleJumpStyles.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
     <div id="countdown-overlay" class="countdown-overlay" style="display: none;"></div>
 
     <!-- Back Button -->
-    <button id="back-button" class="back-button">Back</button>
+    <button id="back-button" class="back-button" aria-label="Back to Game Launcher">Back</button>
     <script src="../Game_Launcher/leaderboard.js"></script>
     <script src="./src/player.js"></script>
     <script src="./src/monsters.js"></script>
@@ -37,5 +38,10 @@
     <script src="./src/blockType.js"></script>
     <script src="./src/blockSpawner.js"></script>
     <script src="./src/main.js"></script>
+    <footer class="game-footer">
+        <a href="../Game_Launcher/gameLauncher.html">&#8592; Back to Game Launcher</a>
+        <span class="mx-2">|</span>
+        <a href="../index.html">Maya Vyas</a>
+    </footer>
 </body>
 </html>

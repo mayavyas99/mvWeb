@@ -22,15 +22,27 @@
     <!-- ✅ Buttons Positioned Using Tailwind -->
     <div class="relative z-10 w-full h-full">
         <!-- ✅ Button 1 (Transparent, Clickable) -->
-<a href="../Game_Launcher/gameLauncher.html" target="_blank" 
+<a href="../Game_Launcher/gameLauncher.html" target="_blank" rel="noopener noreferrer"
+   aria-label="Open Game Launcher - play Doodle Jump and view leaderboard"
 class="absolute top-[73%] left-[92%] transform -translate-x-1/2 -translate-y-1/2 
-       px-20 py-40 bg-transparent rounded-lg shadow-lg transition opacity-0 hover:opacity-10">
+       px-20 py-40 bg-white/10 rounded-lg shadow-lg transition opacity-0 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white">
 </a>
 
 <!-- ✅ Button 2 (Transparent, Clickable) -->
-<a href="../Characters/characters.html" target="_blank" 
-class="absolute top-[51%] bottom-[0%] left-[41.5%] transform -translate-x-1/2 -translate-y-1/2 px-16 py-50 rounded-lg shadow-lg transition opacity-0 hover:opacity-10"></a>
+<a href="../Characters/characters.html" target="_blank" rel="noopener noreferrer"
+   aria-label="Open Character Chatbots - chat with Sita, Nikki, and Sean"
+class="absolute top-[51%] bottom-[0%] left-[41.5%] transform -translate-x-1/2 -translate-y-1/2 px-16 py-50 rounded-lg shadow-lg transition opacity-0 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white bg-white/10"></a>
     </div>
+
+    <footer class="absolute bottom-0 left-0 right-0 py-3 text-center bg-black/50 text-white text-sm z-20">
+        <a href="../index.html" class="hover:underline">Home</a>
+        <span class="mx-2">|</span>
+        <a href="../about.html" class="hover:underline">About</a>
+        <span class="mx-2">|</span>
+        <a href="../projects.html" class="hover:underline">Projects</a>
+        <span class="mx-2">|</span>
+        <span>&copy; 2024 Maya Vyas</span>
+    </footer>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+// LEGACY: Unreferenced. Uses invalid getElementById(path). No page includes GSAP or this file. See LEGACY.md. Safe to remove or refactor.
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     const mainImage = document.getElementById('/Users/kasevyas/Documents/Personal/MayaWeb/Maya Images/mayo-evil-lair.webp');

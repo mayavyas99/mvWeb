@@ -1,3 +1,4 @@
+// LEGACY: Unreferenced. Uses absolute paths and old hero/loading-overlay. See LEGACY.md. Safe to remove or refactor.
 document.addEventListener('DOMContentLoaded', function() {
     const hero = document.querySelector('.hero');
     const loadingOverlay = document.querySelector('.loading-overlay');

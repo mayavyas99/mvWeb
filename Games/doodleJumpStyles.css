@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* Modal Styling */
@@ -46,7 +46,7 @@ body {
 
 #player-name:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: #ea580c;
 }
 
 .button-group {
@@ -67,12 +67,12 @@ body {
 }
 
 #submit-score {
-    background-color: #4CAF50;
+    background-color: #ea580c;
     color: white;
 }
 
 #submit-score:hover {
-    background-color: #45a049;
+    background-color: #c2410c;
 }
 
 #skip-score {
@@ -84,21 +84,23 @@ body {
     background-color: #da190b;
 }
 
-/* Back Button */
+/* Back Button - matches site orange accent */
 .back-button {
     position: fixed;
     top: 10px;
     left: 10px;
     padding: 10px 15px;
-    background-color: #4CAF50;
+    background-color: #ea580c;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
 }
 
 .back-button:hover {
-    background-color: #45a049;
+    background-color: #c2410c;
 }
 
 /* Countdown Overlay */
@@ -115,4 +117,19 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 500;
+}
+
+.game-footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.game-footer a {
+    color: #ea580c;
+    text-decoration: none;
+}
+.game-footer a:hover {
+    text-decoration: underline;
 }
