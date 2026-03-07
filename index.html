@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maya Vyas — Screenwriter and storyteller. Writer on We Were Liars, Walker, Leverage: Redemption; Legally Brown: The Musical The Short. View full credits on IMDb.">
+    <meta property="og:title" content="Maya Vyas | Screenwriter">
+    <meta property="og:description" content="Screenwriter, storyteller, actress. We Were Liars, Walker, Legally Brown, Leverage: Redemption.">
+    <meta property="og:type" content="website">
     <title>Maya Vyas | Screenwriter</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -75,7 +79,7 @@
         <!-- ✅ Desktop Navigation Menu (Hidden on Mobile) -->
         <ul class="hidden md:flex space-x-10 text-lg font-medium">
             <li>
-                <a href="index.html" class="text-red-500 relative after:content-[''] after:block after:w-full after:h-0.5 after:bg-red-500 after:mt-1">
+                <a href="index.html" class="text-orange-600 relative after:content-[''] after:block after:w-full after:h-0.5 after:bg-orange-600 after:mt-1">
                     Home
                 </a>
             </li>
@@ -86,6 +90,7 @@
 
         <!-- ✅ Desktop Social Icons (Hidden on Mobile) -->
         <ul class="hidden md:flex space-x-6 text-2xl text-gray-700 items-center">
+            <li><a href="https://www.imdb.com/name/nm10034069/" target="_blank" rel="noopener noreferrer" aria-label="IMDb profile"><i class="fa-brands fa-imdb"></i></a></li>
             <li><a href="https://www.linkedin.com/in/maya-vyas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="https://twitter.com/maya_vya4" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="https://www.instagram.com/mvyas90/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile"><i class="fa-brands fa-instagram"></i></a></li>
@@ -117,9 +122,9 @@
 
     <!-- Hero Section with Infinite Scrolling Carousel -->
     <main id="main-content" class="mt-32 flex justify-center">
-        <section class="relative w-full max-w-[105vw] md:max-w-[100vw] lg:max-w-[95vw] flex flex-col items-center">
+        <section class="relative w-full max-w-[105vw] md:max-w-[100vw] lg:max-w-[95vw] flex flex-col items-center min-h-[60vh]">
             <!-- Carousel Container -->
-            <div class="carousel-container overflow-hidden whitespace-nowrap relative w-full">
+            <div class="carousel-container overflow-hidden whitespace-nowrap absolute inset-0 w-full">
                 <div class="carousel-track flex w-max animate-infinite-scroll">
                     <!-- First Set of Images -->
                     <ul class="flex items-center justify-center md:justify-start space-x-6">
@@ -141,21 +146,22 @@
                     </ul>
                 </div>
             </div>
-        </section>
-    
-    
-
             <!-- Overlay Text -->
-            <div class="absolute inset-0 flex items-center justify-center text-white text-center">
-                <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+            <div class="absolute inset-0 flex items-center justify-center text-white text-center z-10" data-animate="fade-in">
+                <div class="bg-black/50 p-6 rounded-lg">
                     <h1 class="text-3xl md:text-5xl font-bold font-playfair mb-4">Maya Vyas</h1>
                     <h2 class="text-lg md:text-xl">Screenwriter, Storyteller, Actress</h2>
-                    <a href="projects.html" class="mt-4 inline-block bg-white text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-200 transition">
-                        Explore My Projects →
-                    </a>
+                    <div class="mt-4 flex flex-wrap justify-center gap-3">
+                        <a href="projects.html" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-orange-700 transition shadow-lg hover:scale-105">
+                            Explore My Projects →
+                        </a>
+                        <a href="https://www.imdb.com/name/nm10034069/" target="_blank" rel="noopener noreferrer" class="inline-block bg-white/20 text-white border-2 border-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-white/30 transition">
+                            View on IMDb
+                        </a>
+                    </div>
                 </div>
             </div>
-
+        </section>
     </main>
     <footer class="bg-gray-100 py-6 mt-16 text-center">
         <!-- Contact Info -->
@@ -173,11 +179,13 @@
             <li><a href="index.html" class="hover:text-black">Home</a></li>
             <li><a href="about.html" class="hover:text-black">About</a></li>
             <li><a href="projects.html" class="hover:text-black">Projects</a></li>
+            <li><a href="https://www.imdb.com/name/nm10034069/" target="_blank" rel="noopener noreferrer" class="hover:text-black">IMDb</a></li>
         </ul>
 
         <!-- Copyright -->
         <div class="mt-6 text-gray-500 text-sm">
-            <p>&copy; 2024 Maya Vyas. All Rights Reserved.</p>
+            <p>&copy; 2026 Maya Vyas. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="./scripts/scroll-animate.js"></script>
 </body>

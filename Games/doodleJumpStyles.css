@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 52px;
+    padding-bottom: 48px;
+    min-height: 100vh;
+    box-sizing: border-box;
     background-color: #f0f0f0;
     font-family: 'Montserrat', Arial, sans-serif;
 }
@@ -84,10 +88,10 @@ body {
     background-color: #da190b;
 }
 
-/* Back Button - matches site orange accent */
+/* Back Button - matches site orange accent, below top nav */
 .back-button {
     position: fixed;
-    top: 10px;
+    top: 54px;
     left: 10px;
     padding: 10px 15px;
     background-color: #ea580c;
@@ -97,10 +101,47 @@ body {
     cursor: pointer;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 600;
+    z-index: 99;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .back-button:hover {
     background-color: #c2410c;
+    color: white;
+}
+
+/* Top nav: always visible escape path */
+.game-top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+.game-top-nav a {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+.game-top-nav a:hover {
+    background: rgba(249, 115, 22, 0.25);
+    color: #fff;
+}
+.game-top-nav .nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
 
 /* Countdown Overlay */
@@ -120,15 +161,22 @@ body {
 }
 
 .game-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     text-align: center;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     font-size: 0.875rem;
-    color: #6b7280;
+    color: #9ca3af;
+    background: rgba(0, 0, 0, 0.75);
     font-family: 'Montserrat', Arial, sans-serif;
 }
 .game-footer a {
     color: #ea580c;
     text-decoration: none;
+    margin: 0 0.5rem;
 }
 .game-footer a:hover {
     text-decoration: underline;

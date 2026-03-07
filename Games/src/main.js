@@ -1,11 +1,24 @@
 // Use the existing canvas from the page (inside #game-container)
-var c = document.getElementById("canvas");
-var ctx = c.getContext("2d");
+const c = document.getElementById("canvas");
+const ctx = c.getContext("2d");
 
-var screenWidth = 500;
-var screenHeight = 800;
+// Constants
+const screenWidth = 500;
+const screenHeight = 800;
+const gravity = 0.34;
+const fps = 60;
+const interval = 1000 / fps;
+
 c.width = screenWidth;
 c.height = screenHeight;
+
+// Background image: load once, reuse every frame
+let cachedBackground = null;
+const bgImage = new Image();
+bgImage.onload = function () {
+    cachedBackground = bgImage;
+};
+bgImage.src = "Sprites/background.png";
 
 let isHighScoreSubmitted = false;
 let gameOverChecked = false;
@@ -14,7 +27,6 @@ let isCountingDown = false;
 let isModalVisible = false;
 
 // Game variables
-const gravity = 0.34;
 let holdingLeftKey = false;
 let holdingRightKey = false;
 let dead = false;
@@ -27,10 +39,8 @@ let blocks = [];
 let powerups = [];
 
 // Time variables
-let fps = 60;
 let now;
 let then = Date.now();
-let interval = 1000 / fps;
 let delta;
 
 // Modal and countdown elements
@@ -46,27 +56,24 @@ const countdownOverlay = document.getElementById('countdown-overlay');
 window.addEventListener('keydown', keydown, false);
 window.addEventListener('keyup', keyup, false);
 
-// Keydown handling
+// Keydown handling — use key for clarity and future-proofing
 function keydown(e) {
-    if (e.keyCode === 65) {
+    const k = e.key.toLowerCase();
+    if (k === "a") {
         holdingLeftKey = true;
-    } else if (e.keyCode === 68) {
+    } else if (k === "d") {
         holdingRightKey = true;
     }
-
-    // Restart game on "R" only if the game is over, not counting down, and modal is not visible
-    if (e.keyCode === 82 && dead && !isCountingDown && !isModalVisible) {
+    if (k === "r" && dead && !isCountingDown && !isModalVisible) {
         resetGame();
     }
 }
 
 // Keyup handling
 function keyup(e) {
-    if (e.keyCode === 65) {
-        holdingLeftKey = false;
-    } else if (e.keyCode === 68) {
-        holdingRightKey = false;
-    }
+    const k = e.key.toLowerCase();
+    if (k === "a") holdingLeftKey = false;
+    else if (k === "d") holdingRightKey = false;
 }
 
 // Reset game
@@ -215,10 +222,9 @@ function loop() {
 
     if (delta > interval) {
         ctx.clearRect(0, 0, screenWidth, screenHeight);
-
-        const backgroundImage = new Image();
-        backgroundImage.src = "Sprites/background.png";
-        ctx.drawImage(backgroundImage, 0, 0, screenWidth, screenHeight);
+        if (cachedBackground) {
+            ctx.drawImage(cachedBackground, 0, 0, screenWidth, screenHeight);
+        }
 
         for (let i = 0; i < blocks.length; i++) {
             if (blocks[i] !== 0) {
@@ -254,10 +260,7 @@ centerCanvas();
 submitScoreBtn.addEventListener('click', submitHighScore);
 skipScoreBtn.addEventListener('click', skipHighScore);
 
-// Back button functionality
-backButton.addEventListener('click', () => {
-    window.location.href = '../Game_Launcher/gameLauncher.html';
-});
+// Back button: now an <a> so navigation works without JS; no handler needed
 
 // Initialize game
 blocks.push(new block());

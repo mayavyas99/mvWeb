@@ -40,6 +40,7 @@
 
         <!-- 🎮 Game Launcher Title -->
         <h1 class="text-4xl font-bold">Game Launcher</h1>
+        <p class="text-gray-600 text-sm">Maya's high score: 68,832. Beat it if you can!</p>
 
         <!-- 🕹️ Game Box -->
         <div class="flex flex-wrap justify-center gap-8">
@@ -69,26 +70,10 @@
             <li><a href="../about.html" class="hover:text-black">About</a></li>
             <li><a href="../projects.html" class="hover:text-black">Projects</a></li>
         </ul>
-        <p class="mt-6 text-gray-500 text-sm">&copy; 2024 Maya Vyas. All Rights Reserved.</p>
+        <p class="mt-6 text-gray-500 text-sm">&copy; 2026 Maya Vyas. All Rights Reserved.</p>
     </footer>
 
     <script src="./leaderboard.js"></script>
-    <script>
-        // Back Button Functionality
-        document.getElementById('back-button').addEventListener('click', (e) => {
-            e.preventDefault();
-            if (document.referrer) {
-                window.history.back();
-            } else {
-                window.location.href = '../Evil_Lair/evilLair.html';
-            }
-        });
-
-        // Initialize leaderboard
-        window.addEventListener('load', () => {
-            Leaderboard.renderLeaderboard('leaderboard-container');
-        });
-    </script>
-
+    <script src="./gameLauncher.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ var player = new function() {
     this.update = function() {
         if (!dead) {
             this.ySpeed += gravity;
-            if (this.y <= screen.height / 2 - 200 && this.ySpeed <= 0) {
+            if (this.y <= screenHeight / 2 - 200 && this.ySpeed <= 0) {
                 for (var i = 0; i < blocks.length; i++) {
                     blocks[i].y -= this.ySpeed;
                 }

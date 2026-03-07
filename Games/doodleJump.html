@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./doodleJumpStyles.css">
 </head>
 <body>
+    <!-- Persistent top nav: always visible way out -->
+    <nav class="game-top-nav" aria-label="Game navigation">
+        <a href="../Game_Launcher/gameLauncher.html">&#8592; Game Launcher</a>
+        <div class="nav-links">
+            <a href="../Evil_Lair/evilLair.html">Maya's Lair</a>
+            <a href="../index.html">Home</a>
+        </div>
+    </nav>
+
     <div id="game-container">
         <canvas id="canvas"></canvas>
     </div>
@@ -28,8 +37,8 @@
     <!-- Countdown Overlay -->
     <div id="countdown-overlay" class="countdown-overlay" style="display: none;"></div>
 
-    <!-- Back Button -->
-    <button id="back-button" class="back-button" aria-label="Back to Game Launcher">Back</button>
+    <!-- In-page back button (redundant with top nav; kept for quick tap) -->
+    <a id="back-button" class="back-button" href="../Game_Launcher/gameLauncher.html" aria-label="Back to Game Launcher">&#8592; Back</a>
     <script src="../Game_Launcher/leaderboard.js"></script>
     <script src="./src/player.js"></script>
     <script src="./src/monsters.js"></script>
@@ -39,9 +48,9 @@
     <script src="./src/blockSpawner.js"></script>
     <script src="./src/main.js"></script>
     <footer class="game-footer">
-        <a href="../Game_Launcher/gameLauncher.html">&#8592; Back to Game Launcher</a>
-        <span class="mx-2">|</span>
-        <a href="../index.html">Maya Vyas</a>
+        <a href="../Game_Launcher/gameLauncher.html">&#8592; Game Launcher</a>
+        <a href="../Evil_Lair/evilLair.html">Maya's Lair</a>
+        <a href="../index.html">Home</a>
     </footer>
 </body>
 </html>
